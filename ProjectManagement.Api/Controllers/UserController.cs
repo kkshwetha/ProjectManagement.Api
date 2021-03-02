@@ -26,13 +26,13 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser()
+        public IActionResult CreateUser([FromBody] User user)
         {
             return Post();
         }
 
         [HttpPut]
-        public IActionResult UpdateUser()
+        public IActionResult UpdateUser([FromBody] User user)
         {
             return Put();
         }
@@ -45,7 +45,7 @@ namespace ProjectManagement.Api.Controllers
 
         [HttpPost]
         [Route("login")]
-        public IActionResult Login()
+        public IActionResult Login([FromBody] User user)
         {
             return Ok();
         }

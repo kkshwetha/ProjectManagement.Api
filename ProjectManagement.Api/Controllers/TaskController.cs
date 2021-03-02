@@ -25,13 +25,13 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTask()
+        public IActionResult CreateTask([FromBody] Task task)
         {
             return Post();
         }
 
         [HttpPut]
-        public IActionResult UpdateTask()
+        public IActionResult UpdateTask([FromBody] Task task)
         {
             return Put();
         }
