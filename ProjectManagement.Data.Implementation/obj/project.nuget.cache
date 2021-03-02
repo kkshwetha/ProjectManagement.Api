@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Vzzzc5LPT0MGvCUe9v4OvGc459gFgpYkR6e0M/hC2XcNinpJrIPL+XBouMq4VB5IVAipSorAd31lLkO9WVG+Q==",
+  "success": true,
+  "projectFilePath": "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Data.Implementation\\ProjectManagement.Data.Implementation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\inchandn\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\inchandn\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
