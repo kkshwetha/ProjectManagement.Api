@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ProjectManagement.Data.Implementation;
+using ProjectManagement.Data.Interfaces;
 
 namespace ProjectManagement.Api
 {
@@ -26,7 +28,7 @@ namespace ProjectManagement.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ibasereposity>
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

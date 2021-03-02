@@ -20,29 +20,27 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
         public IActionResult GetProject(long id)
         {
             return Get(id);
         }
 
         [HttpPost]
-        public IActionResult CreateProject()
+        public IActionResult CreateProject([FromBody] Project project)
         {
             return Post();
         }
 
         [HttpPut]
-        public IActionResult UpdateProject()
+        public IActionResult UpdateProject([FromBody] Project project)
         {
             return Put();
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public IActionResult DeleteProject()
+        public IActionResult DeleteProject(long id)
         {
-           return Delete();
+            return Delete(id);
         }
 
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZfVKvrYIX1pvn9+JrHVOxZw4P8E6hXf4oj7GNA9l7Kd/7aOY+bnt7L5rDUCMO5Utt5XpzIuh9emI8sXhXxdRPw==",
+  "dgSpecHash": "o5lJ/butrDJqkSGp9xywsELuvl1xmaGdzHr47ENoAZHxn08ifiej2YJ0w3002OszDPl/hXFQWYac56PCOsy+8A==",
   "success": true,
-  "projectFilePath": "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
+  "projectFilePath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\inchandn\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

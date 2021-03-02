@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {}
+    "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {}
   },
   "projects": {
-    "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {
+    "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
+        "projectUniqueName": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
         "projectName": "ProjectManagement.Entities",
-        "projectPath": "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
+        "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj",
         "packagesPath": "C:\\Users\\inchandn\\.nuget\\packages\\",
-        "outputPath": "D:\\Shwetha\\GreatLearning\\ProjectManagement\\ProjectManagement.Api\\ProjectManagement.Entities\\obj\\",
+        "outputPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\inchandn\\AppData\\Roaming\\NuGet\\NuGet.Config",

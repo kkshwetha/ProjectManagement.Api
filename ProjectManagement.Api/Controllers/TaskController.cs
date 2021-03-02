@@ -19,7 +19,6 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
         public IActionResult GetTask(long id)
         {
             return Get(id);
@@ -38,10 +37,9 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public IActionResult DeleteTask()
+        public IActionResult DeleteTask(long id)
         {
-            return Delete();
+            return Delete(id);
         }
 
     }
