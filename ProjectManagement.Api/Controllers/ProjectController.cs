@@ -12,36 +12,40 @@ namespace ProjectManagement.Api.Controllers
     [Route("api/Project")]
     public class ProjectController : BaseController<Project>
     {
-        [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public IActionResult GetAllProjects()
+        public ProjectController():base()
         {
-            return Get();
-        }
 
-        [HttpGet]
-        public IActionResult GetProject(long id)
-        {
-            return Get(id);
         }
+        //[HttpGet]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //public IActionResult GetAllProjects()
+        //{
+        //    return Get();
+        //}
 
-        [HttpPost]
-        public IActionResult CreateProject([FromBody] Project project)
-        {
-            return Post();
-        }
+        //[HttpGet]
+        //public IActionResult GetProject(long id)
+        //{
+        //    return Get(id);
+        //}
 
-        [HttpPut]
-        public IActionResult UpdateProject([FromBody] Project project)
-        {
-            return Put();
-        }
+        //[HttpPost]
+        //public IActionResult CreateProject([FromBody] Project project)
+        //{
+        //    return Post();
+        //}
 
-        [HttpDelete]
-        public IActionResult DeleteProject(long id)
-        {
-            return Delete(id);
-        }
+        //[HttpPut]
+        //public IActionResult UpdateProject([FromBody] Project project)
+        //{
+        //    return Put();
+        //}
+
+        //[HttpDelete]
+        //public IActionResult DeleteProject(long id)
+        //{
+        //    return Delete(id);
+        //}
 
     }
 }

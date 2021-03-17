@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ProjectManagement.Data.Implementation;
 using ProjectManagement.Data.Interfaces;
+using ProjectManagement.Entities;
+using ProjectManagement.Shared;
 
 namespace ProjectManagement.Api
 {
@@ -27,8 +30,24 @@ namespace ProjectManagement.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddControllers();//.AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddDbContext<Data.Implementation.ProjectManagementContext>(
+                options =>
+                {
+                    options.UseInMemoryDatabase("ProjectManagement");
+                    options.UseLazyLoadingProxies();
+                }, ServiceLifetime.Transient);
+            DependencyResolver.Init(this.RegisterDependencies(services).BuildServiceProvider());
+        }
+
+        private IServiceCollection RegisterDependencies(IServiceCollection services)
+        {
+                services.AddTransient<IBaseRepository<User>, BaseRepository<User>>();
+                services.AddTransient<IBaseRepository<Project>, BaseRepository<Project>>();
+                services.AddTransient<IBaseRepository<Entities.Task>, BaseRepository<Entities.Task>>();
+
+                return services;
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

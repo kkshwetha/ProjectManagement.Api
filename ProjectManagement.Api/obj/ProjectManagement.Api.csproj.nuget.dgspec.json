@@ -31,11 +31,14 @@
               "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data.Implementation\\ProjectManagement.Data.Implementation.csproj": {
                 "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data.Implementation\\ProjectManagement.Data.Implementation.csproj"
               },
-              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj": {
-                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj"
+              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj": {
+                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj"
               },
               "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {
                 "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj"
+              },
+              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj": {
+                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj"
               }
             }
           }
@@ -49,6 +52,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -85,18 +108,21 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj": {
-                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj"
+              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj": {
+                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj"
+              },
+              "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj": {
+                "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj"
               }
             }
           }
@@ -108,14 +134,12 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[5.0.4, )"
             }
           },
           "imports": [
@@ -128,16 +152,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj": {
+    "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj",
-        "projectName": "ProjectManagement.Data.Interfaces",
-        "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.Interfaces.csproj",
+        "projectUniqueName": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj",
+        "projectName": "ProjectManagement.Data",
+        "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\ProjectManagement.Data.csproj",
         "packagesPath": "C:\\Users\\inchandn\\.nuget\\packages\\",
         "outputPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -146,15 +175,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
               "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj": {
                 "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Entities\\ProjectManagement.Entities.csproj"
@@ -169,16 +198,8 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -189,6 +210,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
@@ -207,15 +233,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://nuget.org/api/v2/": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -226,14 +252,66 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj",
+        "projectName": "ProjectManagement.Shared",
+        "projectPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj",
+        "packagesPath": "C:\\Users\\inchandn\\.nuget\\packages\\",
+        "outputPath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\inchandn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.1.9, )"
             }
           },
           "imports": [
@@ -246,6 +324,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
