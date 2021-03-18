@@ -70,3 +70,7 @@ D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\
 D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\obj\Debug\netcoreapp3.1\ProjectManagement.Api.dll
 D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\obj\Debug\netcoreapp3.1\ProjectManagement.Api.pdb
 D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\obj\Debug\netcoreapp3.1\ProjectManagement.Api.genruntimeconfig.cache
+D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Shwetha\GreatLearning\New folder\ProjectManagement.Api\ProjectManagement.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

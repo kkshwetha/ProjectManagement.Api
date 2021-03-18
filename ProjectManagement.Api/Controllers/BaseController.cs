@@ -26,6 +26,7 @@ namespace ProjectManagement.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            
             return Ok(Repository.Get());
         }
 
@@ -76,6 +77,13 @@ namespace ProjectManagement.Api.Controllers
 
             await Repository.Delete(id);
 
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login([FromBody] User user)
+        {
             return Ok();
         }
     }

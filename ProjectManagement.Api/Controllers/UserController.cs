@@ -20,11 +20,11 @@ namespace ProjectManagement.Api.Controllers
         //{
         //    baseRepository1 = baseRepository;
         //}
-        //[HttpGet]
+        ////[HttpGet]
         //[ProducesResponseType(StatusCodes.Status200OK)]
         //public IActionResult GetAllUsers()
         //{
-        //    return Get();
+        //    return (IActionResult)baseRepository1.Get();
         //}
 
         //[HttpGet]
@@ -51,11 +51,11 @@ namespace ProjectManagement.Api.Controllers
         //    return Delete(id);
         //}
 
-        //[HttpPost]
-        //[Route("login")]
-        //public IActionResult Login([FromBody] User user)
-        //{
-        //    return Ok();
-        //}
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login([FromBody] User user)
+        {
+            return Ok();
+        }
     }
 }

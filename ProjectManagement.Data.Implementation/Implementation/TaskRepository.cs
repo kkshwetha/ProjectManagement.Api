@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ProjectManagement.Entities;
 
 namespace ProjectManagement.Data.Implementation
 {
-    class TaskRepository
+  public  class TaskRepository:BaseRepository<Task>
     {
+        public TaskRepository():base()
+        {
+
+        }
     }
 }
