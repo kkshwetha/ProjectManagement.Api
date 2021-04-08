@@ -169,8 +169,9 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Body = new
                 {
                     // ID = 6,
-                    FirstName = "Test",
-                    LastName = "Tes"
+                    Detail = "Testrergergergr",
+                    CreatedOn = DateTime.Today
+                    
 
                 }
             };
@@ -193,9 +194,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Task",
                 Body = new
                 {
-                    ID = 3,
-                    FirstName = "Test",
-                    LastName = "Tes"
+                    ID = 3
 
                 }
             };
@@ -218,10 +217,8 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Task",
                 Body = new
                 {
-                    ID = 1,
-                    FirstName = "Test",
-                    LastName = "Tes",
-                    Email = "test@gmail.com"
+                    Detail = "TestrergergergrPut",
+                    CreatedOn = DateTime.Today
                 }
             };
 

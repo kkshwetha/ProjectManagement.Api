@@ -71,6 +71,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Project",
                 Body = new
                 {
+                    Name="Test1Pr",
                     Detail = "TestGetByID",
                     CreatedOn = DateTime.Today
                 }
@@ -121,7 +122,8 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Body = new
                 {
                     Detail = "Testrergergergr",
-                    CreatedOn = DateTime.Today
+                    CreatedOn = DateTime.Today,
+                    Name = "Test1Pr1"
                 }
             };
 
@@ -159,9 +161,9 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Project",
                 Body = new
                 {
-                    // ID = 6,
-                    FirstName = "Test",
-                    LastName = "Tes"
+                    Detail = "Testrergergergr",
+                    CreatedOn = DateTime.Today,
+                    Name = "Test1Pr2",
 
                 }
             };
@@ -184,9 +186,10 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Project",
                 Body = new
                 {
-                    ID = 3,
-                    FirstName = "Test",
-                    LastName = "Tes"
+                    ID=3,
+                    Detail = "Testrergergergr",
+                    CreatedOn = DateTime.Today,
+                    Name = "Test1Pr1",
 
                 }
             };
@@ -209,10 +212,9 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/Project",
                 Body = new
                 {
-                    ID = 1,
-                    FirstName = "Test",
-                    LastName = "Tes",
-                    Email = "test@gmail.com"
+                    Detail = "Testrergergergr",
+                    CreatedOn = DateTime.Today,
+                    Name = "Test1Pr6",
                 }
             };
 
