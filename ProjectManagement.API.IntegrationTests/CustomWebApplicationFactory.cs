@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using ProjectManagement.Data.Implementation;
 using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Shared;
 using ProjectManagement.Data.Interfaces;
 using ProjectManagement.Entities;
 

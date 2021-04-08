@@ -71,7 +71,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
             var stringResponse = await httpResponse.Content.ReadAsStringAsync();
             var user = JsonConvert.DeserializeObject<User>(stringResponse);
             Assert.Equal(1, user.ID);
-            Assert.Equal("Tes", user.LastName);
+            Assert.Equal("User1", user.LastName);
         }
 
         [Fact]
@@ -99,22 +99,22 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Url = "/api/User",
                 Body = new
                 {
-                    ID = 11,
                     FirstName = "Test",
-                    LastName = "Tes"
+                    LastName = "Tes",
+                    Email="delete@gmail.com"
                 }
             };
 
             // Act
             var postResponse = await _client.PostAsync(postRequest.Url, ContentHelper.GetStringContent(postRequest.Body));
-           // var jsonFromPostResponse = await postResponse.Content.ReadAsStringAsync();
+            var jsonFromPostResponse = await postResponse.Content.ReadAsStringAsync();
 
-            //var singleResponse = JsonConvert.DeserializeObject<User>(jsonFromPostResponse);
+            var singleResponse = JsonConvert.DeserializeObject<User>(jsonFromPostResponse);
 
-            //var deleteResponse = await _client.DeleteAsync(string.Format("/api/User/{0}", singleResponse.ID));
-            var deleteResponse = await _client.DeleteAsync(string.Format("/api/User/{0}", postRequest.Body.ID));
+            var deleteResponse = await _client.DeleteAsync(string.Format("/api/User/{0}", singleResponse.ID));
+           // var deleteResponse = await _client.DeleteAsync(string.Format("/api/User/{0}", postRequest.Body.ID));
             // Assert
-          //  postResponse.EnsureSuccessStatusCode();
+           postResponse.EnsureSuccessStatusCode();
 
             
 
@@ -131,7 +131,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task TestPostStockItemAsync()
+        public async System.Threading.Tasks.Task TestPostUserAsync()
         {
             // Arrange
             var request = new
@@ -156,7 +156,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task TestPostStockItemAsync_Negative()
+        public async System.Threading.Tasks.Task TestPostUserAsync_Negative()
         {
             // Arrange
             var request = new
@@ -181,7 +181,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task TestPutStockItemAsync()
+        public async System.Threading.Tasks.Task TestPutUserAsync()
         {
             // Arrange
             var request = new
@@ -190,8 +190,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
                 Body = new
                 {
                     ID = 1,
-                    FirstName = "Test",
-                    LastName = "Tes",
+                    FirstName = "Test",                   
                     Email="test@gmail.com"
                 }
             };
@@ -204,7 +203,7 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task TestPutStockItemAsync_BadRequestError()
+        public async System.Threading.Tasks.Task TestPutUserAsync_BadRequestError()
         {
             // Arrange
             var request = new
