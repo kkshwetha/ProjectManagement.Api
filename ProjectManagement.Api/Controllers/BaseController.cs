@@ -48,7 +48,7 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(T entity)
+        public async Task<IActionResult> Post([FromBody] T entity)
         {
             if (!ModelState.IsValid)
             {
@@ -60,7 +60,7 @@ namespace ProjectManagement.Api.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put(T entity)
+        public async Task<IActionResult> Put([FromBody] T entity)
         {
             if (!ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace ProjectManagement.Api.Controllers
             return Ok(result);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(long id)
         {
             T existing = Repository.Get(id);

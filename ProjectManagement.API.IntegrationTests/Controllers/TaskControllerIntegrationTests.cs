@@ -20,6 +20,22 @@ namespace ProjectManagement.API.IntegrationTests.Controllers
             _client = factory.CreateClient();
         }
 
+        [Theory]
+        [InlineData("/api/task")]
+        [InlineData("/api/task/1")]
+        public async System.Threading.Tasks.Task GetHttpRequest(string url)
+        {
+            // The endpoint or route of the controller action.
+            var httpResponse = await _client.GetAsync(url);
+
+            // Must be successful.
+            httpResponse.EnsureSuccessStatusCode();
+
+            // Deserialize and examine results.
+            Assert.Equal("application/json; charset=utf-8", httpResponse.Content.Headers.ContentType.ToString());
+
+        }
+
         [Fact]
         public async System.Threading.Tasks.Task CanGetTasks()
         {
