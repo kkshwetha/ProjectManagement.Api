@@ -15,7 +15,7 @@ namespace ProjectManagement.Shared
             get
             {
                 if (Resolver == null)
-                    throw new Exception("Dpeendency Resolver not initialized");
+                    throw new Exception("Dependency Resolver not initialized");
                 return Resolver;
             }
         }

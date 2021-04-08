@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjectManagement.Data.Implementation;
 using ProjectManagement.Data.Interfaces;
 using ProjectManagement.Entities;
 using ProjectManagement.Shared;
@@ -23,6 +24,10 @@ namespace ProjectManagement.Api.Controllers
             Repository = DependencyResolver.Current.GetService<IBaseRepository<T>>();
         }
 
+        public BaseController(IBaseRepository<T> baseRepository)
+        {
+            Repository = baseRepository;
+        }
         [HttpGet]
         public IActionResult Get()
         {
