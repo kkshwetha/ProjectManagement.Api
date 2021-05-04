@@ -3,32 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsercomponentComponent } from './usercomponent/usercomponent.component';
-import { ProjectscomponentComponent } from './projectscomponent/projectscomponent.component';
-import { TaskscomponentComponent } from './taskscomponent/taskscomponent.component';
-import { NewTaskcomponentComponent } from './taskscomponent/new-taskcomponent/new-taskcomponent.component';
-import { UpdateDeleteTaskcomponentComponent } from './taskscomponent/update-delete-taskcomponent/update-delete-taskcomponent.component';
-import { NewprojectComponentComponent } from './projectscomponent/newproject-component/newproject-component.component';
-import { UpdateDeleteprojectComponentComponent } from './projectscomponent/update-deleteproject-component/update-deleteproject-component.component';
-import { NewUserComponentComponent } from './usercomponent/new-user-component/new-user-component.component';
-import { UpdateDeleteUserComponentComponent } from './usercomponent/update-delete-user-component/update-delete-user-component.component';
-import { LoginComponentComponent } from './login-component/login-component.component';
-import { HeaderComponentComponent } from './header-component/header-component.component';
+import { UserComponent } from './user/user.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { NewTaskComponent } from './tasks/new-taskcomponent/new-taskcomponent.component';
+import { UpdateDeleteTaskComponent } from './tasks/update-delete-task/update-delete-task.component';
+import { NewprojectComponent } from './projects/newproject/newproject.component';
+import { UpdateDeleteprojectComponent } from './projects/update-deleteproject/update-deleteproject.component';
+import { NewUserComponent } from './user/new-user/new-user.component';
+import { UpdateDeleteUserComponent } from './user/update-delete-user/update-delete-user.component';
+import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsercomponentComponent,
-    ProjectscomponentComponent,
-    TaskscomponentComponent,
-    NewTaskcomponentComponent,
-    UpdateDeleteTaskcomponentComponent,
-    NewprojectComponentComponent,
-    UpdateDeleteprojectComponentComponent,
-    NewUserComponentComponent,
-    UpdateDeleteUserComponentComponent,
-    LoginComponentComponent,
-    HeaderComponentComponent
+    UserComponent,
+    ProjectsComponent,
+    TasksComponent,
+    NewTaskComponent,
+    UpdateDeleteTaskComponent,
+    NewprojectComponent,
+    UpdateDeleteprojectComponent,
+    NewUserComponent,
+    UpdateDeleteUserComponent,
+    LoginComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
