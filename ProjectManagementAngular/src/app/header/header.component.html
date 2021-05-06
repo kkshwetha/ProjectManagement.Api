@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Project Management</a>
+    <a class="navbar-brand" href="/user">Project Management</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,4 +20,34 @@
 
         </ul>
     </div>
+    <form class="form-inline my-2 my-lg-0">
+        <a class="navbar-brand">Hello User : Shwetha K K </a>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <a routerLink="/login">Logout</a></button>
+    </form>
 </nav>
+
+<!-- <nav class="navbar navbar-inverse bg-inverse" *ngIf="!isUserLoggedIn">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                {{title}}
+            </a>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-toggleable navbar-inverse bg-inverse" *ngIf="isUserLoggedIn">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerMainMenu" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">{{title}}</a>
+
+
+    <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+    </form>
+
+</nav> -->

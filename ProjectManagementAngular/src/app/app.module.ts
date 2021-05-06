@@ -12,7 +12,7 @@ import { NewprojectComponent } from './projects/newproject/newproject.component'
 import { UpdateDeleteprojectComponent } from './projects/update-deleteproject/update-deleteproject.component';
 import { NewUserComponent } from './user/new-user/new-user.component';
 import { UpdateDeleteUserComponent } from './user/update-delete-user/update-delete-user.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from 'src/app/login/login.component'
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 

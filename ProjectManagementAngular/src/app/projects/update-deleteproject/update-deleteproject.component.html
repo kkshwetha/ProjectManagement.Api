@@ -1,1 +1,37 @@
-<p>update-deleteproject-component works!</p>
+<div class="container" style="margin-top: 100px;">
+
+    <h3>Update Project</h3>
+
+    <div class="form-group row">
+        <!-- Default input -->
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Name">
+        </div>
+    </div>
+
+    <div>
+        <label for="details">
+            Details
+        </label>
+
+        <textarea class="md-textarea form-control " rows="3" id="input_text" type="text" length="120" mdbCharCounter
+            mdbInput></textarea>
+
+    </div>
+
+    <div class="btn-toolbar text-center well">
+        <button [routerLink]="['/projects']" type="button"
+            class="btn btn-primary pull-left btn-color btn-bg-color btn-sm col-xs-2 margin-left">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Save
+        </button>
+        <button [routerLink]="['/projects']" type="button"
+            class="btn btn-primary pull-left btn-color btn-bg-color btn-sm col-xs-2 margin-left">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+        </button>
+        <button [routerLink]="['/projects']" type="button"
+            class="btn btn-primary pull-right btn-color btn-bg-color btn-sm col-xs-2 margin-left">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Cancel
+        </button>
+    </div>
+</div>
