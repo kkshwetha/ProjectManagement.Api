@@ -21,11 +21,11 @@ export class UpdateDeleteTaskComponent implements OnInit {
   addUser() {
     console.log("test add user");
     var val = { id: this.id, name: this.name, detail: this.detail };
-    this.service.addProject(val).subscribe(res => { alert("Added Success"); });
+    this.service.addTask(val).subscribe(res => { alert("Added Success"); });
   }
 
   updateProject() {
     var val = { id: this.id, name: this.name, detail: this.detail };
-    this.service.updateProject(val).subscribe(res => { alert("Update Success"); });
+    this.service.updateTask(val).subscribe(res => { alert("Update Success"); });
   }
 }
