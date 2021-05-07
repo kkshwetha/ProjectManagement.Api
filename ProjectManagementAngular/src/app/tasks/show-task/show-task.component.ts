@@ -26,8 +26,8 @@ export class ShowTaskComponent implements OnInit {
 
   addClick() {
     console.log("modal");
-    this.project = { id: 0, firstName: "" };
-    this.Modaltitle = "Add/Edit User";
+    this.project = { id: 0, detail: "", name: "", status: 0 };
+    this.Modaltitle = "Add/Edit Task";
     this.ActivateAddEditUser = true;
   }
 

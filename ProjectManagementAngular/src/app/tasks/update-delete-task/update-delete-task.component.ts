@@ -13,19 +13,25 @@ export class UpdateDeleteTaskComponent implements OnInit {
   id: number;
   name: string;
   detail: string;
+  assignedToUser: string;
+  status: string;
   ngOnInit(): void {
     this.id = this.project.id;
     this.name = this.project.name;
     this.detail = this.project.detail;
+    this.assignedToUser = this.project.assignedToUser.firstName;
+    this.status = this.project.status;
   }
-  addUser() {
+  addTask() {
     console.log("test add user");
-    var val = { id: this.id, name: this.name, detail: this.detail };
+    //var val = { id: this.id, name: this.project.name, detail: this.detail, status: this.status, assignedToUser: this.assignedToUser };
+    var val = { id: this.id, name: this.project.name, detail: this.detail, status: this.status, assignedToUser: this.assignedToUser };
+
     this.service.addTask(val).subscribe(res => { alert("Added Success"); });
   }
 
-  updateProject() {
-    var val = { id: this.id, name: this.name, detail: this.detail };
+  updateTask() {
+    var val = { id: this.id, detail: this.detail, status: this.status, assignedToUser: this.assignedToUser };
     this.service.updateTask(val).subscribe(res => { alert("Update Success"); });
   }
 }
