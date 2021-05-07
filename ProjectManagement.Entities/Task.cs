@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace ProjectManagement.Entities
 {
@@ -12,6 +13,7 @@ namespace ProjectManagement.Entities
 
         public string Detail { get; set; }
 
+        [JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
         public TaskStatus Status { get; set; }
 
         public long? AssignedToUserID { get; set; }

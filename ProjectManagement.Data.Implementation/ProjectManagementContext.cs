@@ -66,7 +66,7 @@ namespace ProjectManagement.Data.Implementation
             Project.Add(testProject5);
 
             Task task1 = new Task { Project = testProject1 , AssignedToUser = testUser1, Status = Entities.Enums.TaskStatus.New, CreatedOn = DateTime.Today, Detail = "Create Database Table", ProjectID = testProject1.ID, AssignedToUserID = testUser1.ID };
-            Task task2 = new Task { Project = testProject2 , AssignedToUser = testUser2, Status = Entities.Enums.TaskStatus.New, CreatedOn = DateTime.Today, Detail = "Create Database Table2", ProjectID = testProject2.ID, AssignedToUserID = testUser2.ID };
+            Task task2 = new Task { Project = testProject2 , AssignedToUser = testUser2, Status = Entities.Enums.TaskStatus.InProgress, CreatedOn = DateTime.Today, Detail = "Create Database Table2", ProjectID = testProject2.ID, AssignedToUserID = testUser2.ID };
             Task task3 = new Task { Project = testProject3 , AssignedToUser = testUser3, Status = Entities.Enums.TaskStatus.New, CreatedOn = DateTime.Today, Detail = "Create Database Tabl3", ProjectID = testProject3.ID, AssignedToUserID = testUser3.ID };
             Task task4 = new Task { Project = testProject4 , AssignedToUser = testUser4, Status = Entities.Enums.TaskStatus.New, CreatedOn = DateTime.Today, Detail = "Create Database Tabl4", ProjectID = testProject4.ID, AssignedToUserID = testUser4.ID };
             Task task5 = new Task { Project = testProject5 , AssignedToUser = testUser5, Status = Entities.Enums.TaskStatus.New, CreatedOn = DateTime.Today, Detail = "Create Database Tabl5", ProjectID = testProject5.ID, AssignedToUserID = testUser5.ID };

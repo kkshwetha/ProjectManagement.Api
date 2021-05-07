@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oEDp8d1joJpMBXyaqdHC6r4BAsQZOBcXo3FUj8dO1sjdxmctWSiQJ1MhFDW8bfn56sE9yIpMLGNpMXsP+1nI0w==",
+  "dgSpecHash": "nwYolQZajvWIWAUCYpRXre+X9p2oMbyWMMVdKEgzpLb4OSxNwq9Uy9JBwm2r/v0PlkKq+6iwIw9/dvhhKvyWQg==",
   "success": true,
   "projectFilePath": "D:\\Shwetha\\GreatLearning\\New folder\\ProjectManagement.Api\\ProjectManagement.Data.Implementation\\ProjectManagement.Data.Implementation.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\inchandn\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\inchandn\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\inchandn\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

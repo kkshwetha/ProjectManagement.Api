@@ -1,9 +1,32 @@
+<app-show-user></app-show-user>
+<!-- 
+<button type="button" data-keyboard="false" class="btn btn-primary float-right m-2" data-bs-toggle="modal"
+    (click)="addClick()" data-bs-target="#exampleModal">
+    Add user
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{Modaltitle}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    (click)="closeClick()"></button>
+            </div>
+            <div class="modal-body">
+                <app-update-delete-user [dep]="dep" *ngIf="ActivateAddEditUser"></app-update-delete-user>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <div class="container" style="margin-top: 100px;">
     <div class="card-header">
         <button [routerLink]="['/newuser']" class=" btn btn-primary"> New User</button>
         <button [routerLink]="['/updatedeleteuser']" class=" btn btn-primary"> Edit/Delete User</button>
         <div>
-            <table class="table table-hover">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -15,15 +38,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let result of usersList">
 
                         <td></td>
-                        <td> </td>
-                        <td> </td>
-                        <td></td>
-                        <td>
-                            <!-- <button class="btn btn-primary"> Show details</button> -->
-                        </td>
+                        <td> {{result.id}}</td>
+                        <td>{{result.firstName}} </td>
+                        <td>{{result.lastName}}</td>
+                        <td>{{result.email}}
+                            </td>
                     </tr>
                 </tbody>
             </table>
@@ -39,4 +61,4 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->

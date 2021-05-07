@@ -15,15 +15,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let result of projectsList">
+                        <td></td>
+                        <td>{{result.id}}</td>
+                        <td>{{result.name}} </td>
+                        <td>{{result.detail}} </td>
+                        <td>{{result.createdOn}}</td>
 
-                        <td></td>
-                        <td> </td>
-                        <td> </td>
-                        <td></td>
-                        <td>
-                            <!-- <button class="btn btn-primary"> Show details</button> -->
-                        </td>
                     </tr>
                 </tbody>
             </table>

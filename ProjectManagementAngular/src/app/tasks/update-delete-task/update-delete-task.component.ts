@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SharedService } from 'src/app/shared.service';
 
 @Component({
   selector: 'app-update-delete-task',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateDeleteTaskComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service: SharedService) { }
+  @Input() project: any;
+  id: number;
+  name: string;
+  detail: string;
   ngOnInit(): void {
+    this.id = this.project.id;
+    this.name = this.project.name;
+    this.detail = this.project.detail;
+  }
+  addUser() {
+    console.log("test add user");
+    var val = { id: this.id, name: this.name, detail: this.detail };
+    this.service.addProject(val).subscribe(res => { alert("Added Success"); });
   }
 
+  updateProject() {
+    var val = { id: this.id, name: this.name, detail: this.detail };
+    this.service.updateProject(val).subscribe(res => { alert("Update Success"); });
+  }
 }

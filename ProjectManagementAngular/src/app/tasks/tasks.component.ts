@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SharedService } from 'src/app/shared.service';
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: SharedService) {
 
-  ngOnInit(): void {
   }
-
+  tasksList: any[];
+  ngOnInit(): void {
+    this.refreshTasksList();
+  }
+  refreshTasksList() {
+    this.service.getTasksList().subscribe(data => {
+      this.tasksList = data;
+    });
+  }
 }

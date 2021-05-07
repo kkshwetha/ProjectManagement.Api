@@ -1,54 +1,20 @@
-<div class="container" style="margin-top: 100px;">
+<div class="form-group row">
 
+    <label class="col-sm-2 col-form-label">First Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="firstName" placeholder="Enter First Name">
 
-
-
-
-
-
-
-    <h3>Update User</h3>
-
-    <div class="form-group row">
-        <!-- Default input -->
-        <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
-        <div class="col-sm-10">
-            <input class="form-control" id="firstname" placeholder="First Name">
-        </div>
     </div>
+    <label class="col-sm-2 col-form-label">Last Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="lastName" placeholder="Enter Last Name">
 
-    <div class="form-group row">
-        <!-- Default input -->
-        <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
-        <div class="col-sm-10">
-            <input class="form-control" id="lastname" placeholder="Last Name">
-        </div>
     </div>
-    <div class="form-group row">
-        <!-- Default input -->
-        <label for="email" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-            <input class="form-control" id="email" placeholder="Email">
-        </div>
-    </div>
-    <div class="btn-toolbar text-center well">
-        <div class="col-sm-5">
-            <button [routerLink]="['/user']" type="button"
-                class="btn btn-primary pull-left btn-color btn-bg-color btn-sm col-xs-2 margin-left">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Save
-            </button>
-        </div>
-        <div class="col-sm-2">
-            <button [routerLink]="['/user']" type="button"
-                class="btn btn-primary pull-right btn-color btn-bg-color btn-sm col-xs-2 margin-left">
-                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
-            </button>
-        </div>
-
-        <button [routerLink]="['/user']" type="button"
-            class="btn btn-primary pull-right btn-color btn-bg-color btn-sm col-xs-2 margin-left">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Cancel
-        </button>
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="email" placeholder="Enter Email">
 
     </div>
 </div>
+<button (click)="addUser()" class="btn btn-primary" *ngIf="dep.id==0">Add</button>
+<button (click)="updateUser()" class="btn btn-primary">Update</button>
